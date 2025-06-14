@@ -1,10 +1,12 @@
 import styles from './Template.module.scss'
 
 const Notice = ({
-    text
+    children
 }) => {
     return (
-        <div className={styles.notice}>{text}</div>
+        <div className={styles.notice}>
+            {children}
+        </div>
     )
 }
 

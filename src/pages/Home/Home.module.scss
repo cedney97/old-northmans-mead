@@ -3,4 +3,38 @@
     height: 100vh;
     background: black;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    height: 256px;
+    background-image: url("assets/hero.png");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: 650px) {
+        height: 512px;
+    }
+
+    p {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        text-shadow: 2px 2px 2px black;
+        
+        @media (min-width: 420px) {
+            left: 8px;
+        }
+        
+        @media (min-width: 650px) {
+            left: 64px;
+            font-size: 52px;
+        }
+    }
 }
