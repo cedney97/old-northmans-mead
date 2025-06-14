@@ -1,5 +1,4 @@
 import styles from './Home.module.scss'
-import learnMore from 'assets/learn-more.jpg'
 
 const ProfileInfo = ({
     profile
@@ -9,7 +8,7 @@ const ProfileInfo = ({
         className={styles.profileInfo} 
         style={{ 
             borderColor: profile?.brightColor,
-            backgroundImage: !profile && "url(src/assets/learn-more.jpg)",
+            backgroundImage: !profile && "url(src/assets/learn-more.png)",
             backgroundSize: !profile && "cover",
             backgroundPosition: !profile && "center"
         }}
