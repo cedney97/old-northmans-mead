@@ -1,8 +1,11 @@
+import { ScrollProvider } from './contexts/ScrollContext'
 import HomePage from './pages/Home'
 
 function App() {
   return (
-    <HomePage />
+    <ScrollProvider>
+      <HomePage />
+    </ScrollProvider>
   )
 }
 
