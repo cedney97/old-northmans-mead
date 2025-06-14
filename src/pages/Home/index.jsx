@@ -7,6 +7,7 @@ import Different from './Different'
 import banner from 'assets/banner.png'
 import ContactForm from './ContactForm'
 import { useScroll } from '../../contexts/ScrollContext'
+import Mission from './Mission'
 
 const HomePage = () => {
     const { handleScroll } = useScroll()
@@ -18,6 +19,7 @@ const HomePage = () => {
             </Notice>
             <Navbar />
             <Hero />
+            <Mission />
             <Profiles />
             <Different />
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
