@@ -1,18 +1,21 @@
 import styles from './Home.module.scss'
-import learnMore from "../../assets/learn-more.png"
 
 const ProfileInfo = ({
     profile
 }) => {
     return (
-        <div 
-        className={styles.profileInfo} 
-        style={{ 
-            borderColor: profile?.brightColor,
-            backgroundImage: !profile && learnMore,
-            backgroundSize: !profile && "cover",
-            backgroundPosition: !profile && "center"
-        }}
+        <div
+            className={styles.profileInfo}
+            style={{
+                borderColor: profile?.brightColor,
+                ...(
+                    profile
+                    ?
+                    {backgroundImage: "none"}
+                    :
+                    {}
+                )
+            }}
         >
             {
                 profile

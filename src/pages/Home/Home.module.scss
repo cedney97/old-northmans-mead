@@ -110,6 +110,9 @@
     position: relative;
     overflow: hidden;
     transition: 0.2s ease all;
+    background-image: url("../../assets/learn-more.png");
+    background-size: cover;
+    background-position: center;
 
     >p {
         font-size: 24px;
