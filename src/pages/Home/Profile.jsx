@@ -1,26 +1,28 @@
-import { useState } from 'react'
 import styles from './Home.module.scss'
 import { useScroll } from '../../contexts/ScrollContext'
 
-const DesktopProfile = ({
+const Profile = ({
     profile,
     selectedProfile,
     setSelectedProfile
 }) => {
     const { handleScroll } = useScroll()
 
-    const [hover, setHover] = useState(false)
-
     return (
-        <div
-            onMouseOver={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-            className={styles.profile}
-            style={{
-                background: (selectedProfile === profile || hover) ? profile.brightColor : profile.color
-            }}
-        >
-            <img src={profile.rune} className={styles.rune} alt={`${profile.name} Rune`}></img>
+        <div className={styles.profile}>
+            <div
+                className={styles.runeContainer}
+                style={{
+                    backgroundColor: selectedProfile === profile ? profile.brightColor : "transparent"
+                }}
+                onClick={() => setSelectedProfile(profile)}
+            >
+                <img
+                    src={profile.rune}
+                    className={styles.rune}
+                    alt={`${profile.name} Rune`}
+                />
+            </div>
             <img src={profile.mockup} className={styles.mockup} alt={`${profile.name} Bottle`}></img>
             <p>{profile.name}</p>
             <div className={styles.buttons}>
@@ -31,4 +33,4 @@ const DesktopProfile = ({
     )
 }
 
-export default DesktopProfile
+export default Profile

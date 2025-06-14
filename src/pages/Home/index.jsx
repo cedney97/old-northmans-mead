@@ -22,6 +22,7 @@ const HomePage = () => {
             <Mission />
             <Profiles />
             <Different />
+            <h1 style={{ fontSize: "64px"}}>Fara i Viking!</h1>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
             <ContactForm />
             <Navbar />

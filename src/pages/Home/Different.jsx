@@ -19,7 +19,6 @@ const Different = () => {
                     <p>No gluten. No sulfites. No preservatives. Just pure mead.</p>
                 </div>
             </div>
-            <h2>We're honoring old traditions and forging one anew.</h2>
         </section>
     )
 }
