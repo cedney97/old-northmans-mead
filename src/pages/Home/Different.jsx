@@ -8,7 +8,7 @@ const Different = () => {
             <div className={styles.points}>
                 <div>
                     <h3>Infused, Not Flavored</h3>
-                    <p>Real fruit, herbs, and spices. Never artificial extracts.</p>
+                    <p>Fresh fruits, herbs, and spices. Never artificial extracts.</p>
                 </div>
                 <div>
                     <h3>Runes of Purpose</h3>
@@ -16,10 +16,9 @@ const Different = () => {
                 </div>
                 <div>
                     <h3>Clean and Conscious</h3>
-                    <p>No gluten. No sulfites. No preservatives. Just pure mead.</p>
+                    <p>No added gluten, sulfites, or preservatives. Just pure mead.</p>
                 </div>
             </div>
-            <h2>We're honoring old traditions and forging one anew.</h2>
         </section>
     )
 }

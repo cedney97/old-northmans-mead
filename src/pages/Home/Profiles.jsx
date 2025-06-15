@@ -1,32 +1,43 @@
 import { profiles } from 'data/profiles'
 import styles from './Home.module.scss'
-import DesktopProfile from './DesktopProfile'
+import Profile from './Profile'
 import { useState } from 'react'
 import ProfileInfo from './ProfileInfo'
-import DesktopProfiles from './DesktopProfiles'
-import MobileProfiles from './MobileProfiles'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
+import { useScroll } from '../../contexts/ScrollContext'
 
 const Profiles = () => {
-    const [selectedProfile, setSelectedProfile] = useState(null)
+    const [selectedProfile, setSelectedProfile] = useState(profiles[0])
     const { width } = useWindowDimensions()
+    const { handleScroll } = useScroll()
 
     return (
         <section className={styles.profilesSection}>
-            <h1>The Five <span style={{ color: "#ED2E24"}}>Original</span> Profiles</h1>
-            {
-                width > 1330 
-                ?
-                <DesktopProfiles 
-                    selectedProfile={selectedProfile}
-                    setSelectedProfile={setSelectedProfile}
-                />
-                :
-                <MobileProfiles 
-                    selectedProfile={selectedProfile}
-                    setSelectedProfile={setSelectedProfile}
-                />
-            }
+            <div
+                className={styles.highlight}
+                style={{
+                    backgroundImage: `url(${selectedProfile.verb_image})`
+                }}
+            >
+                <p><span>{selectedProfile?.verb}</span><br />The Viking Spirit</p>
+                <button onClick={handleScroll}>Buy Our Mead</button>
+            </div>
+            <div className={styles.profiles}>
+                {
+                    profiles.map((profile) => (
+                        <Profile
+                            key={profile.name}
+                            profile={profile}
+                            selectedProfile={selectedProfile}
+                            setSelectedProfile={setSelectedProfile}
+                        />
+                    ))
+                }
+            </div>
+            {/* <div className={styles.profileInfo}>
+                <h1>{selectedProfile.rune_name}</h1>
+                <p>{selectedProfile.rune_description}</p>
+            </div> */}
         </section>
     )
 }

@@ -13,9 +13,12 @@
     width: 100%;
     position: relative;
     height: 256px;
-    background-image: url("assets/hero.gif");
+    background-image: url("assets/hero2.jpg");
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (min-width: 650px) {
         height: 640px;
@@ -23,19 +26,33 @@
 
     p {
         color: white;
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        text-shadow: 2px 2px 2px black;
-        
-        @media (min-width: 420px) {
-            left: 32px;
-        }
-        
-        @media (min-width: 650px) {
-            left: 64px;
-            font-size: 52px;
+        text-shadow: 0px 0px 8px black;
+        text-align: center;
+        font-size: 52px;
+    }
+}
+
+.mission {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    h1 {
+        font-family: "Norse";
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    p {
+        font-family: "Amiri";
+        font-size: 28px;
+        width: 50%;
+        text-align: center;
+
+        @media (max-width: 420px) {
+            width: 90%;
         }
     }
 }
@@ -46,29 +63,88 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
     text-align: center;
 
     h1 {
         font-size: 48px;
+        font-family: "Norse";
+
+        span {
+            font-family: inherit;
+        }
     }
 
     .profiles {
-        width: 100%;
         display: flex;
-        gap: 8px;
+        width: 100%;
         justify-content: center;
+    }
+}
+
+.highlight {
+    width: 100%;
+    aspect-ratio: 3;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 16px;
+    gap: 16px;
+
+    p {
+        font-family: "Norse";
+        text-align: left;
+        font-size: 64px;
+        font-weight: bold;
+
+        span {
+            color: #ED2E24;
+            font-family: "Norse";
+            font-style: italic;
+        }
+    }
+
+    button {
+        border: 2px solid #ED2E24;
+        background: transparent;
+        font-size: 32px;
+        cursor: pointer;
+        transition: 0.2s ease all;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1)
+        }
     }
 }
 
 .profile {
     width: 15%;
-    height: 742px;
+    border: 2px solid #ED2E24;
+    height: 650px;
     transition: 0.2s ease all;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 16px;
+
+    &:not(:first-child) {
+        border-left: none;
+    }
+
+    .runeContainer {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #ED2E24;
+        transition: 0.2s ease all;
+        cursor: pointer;
+    }
 
     p {
         font-size: 32px;
@@ -76,7 +152,7 @@
     }
 
     .mockup {
-        width: 90%;
+        width: 75%;
     }
 
     .buttons {
@@ -99,71 +175,8 @@
 }
 
 .profileInfo {
-    width: calc(75% + 32px);
-    border: 2px solid;
-    height: 400px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 32px;
-    padding: 32px;
-    justify-content: flex-start;
-    position: relative;
-    overflow: hidden;
-    transition: 0.2s ease all;
-    background-image: url("../../assets/learn-more.png");
-    background-size: cover;
-    background-position: center;
-
-    >p {
-        font-size: 24px;
-    }
-
-    .decoration {
-        width: 30%;
-        height: 150%;
-        position: absolute;
-        top: -60%;
-        right: -10%;
-        transform: rotate(-45deg);
-        transition: 0.2s ease all;
-    }
-    
-    .crest {
-        height: 60%;
-        aspect-ratio: 1;
-    }
-
-    .description {
-        max-width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        text-align: left;
-
-        h2 {
-            color: #ED2E24;
-            font-size: 48px;
-        }
-
-        p {
-            font-family: "Amiri";
-            font-size: 24px;
-        }
-    }
-
-    .runeInfo {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        gap: 8px;
-        text-align: center;
-
-        h3 {
-            font-size: 32px;
-            color: #ED2E24;
-        }
-    }
 }
 
 .different {
@@ -177,9 +190,10 @@
 
     h1 {
         font-size: 48px;
-        font-weight: normal;
+        font-weight: bold;
+        font-family: "Norse";
     }
-    
+
     p {
         font-family: "Amiri";
         font-size: 28px;
@@ -220,9 +234,10 @@
             align-items: center;
             width: 90%;
             gap: 8px;
-            
+
             div {
                 width: 100%;
+
                 p {
                     width: 100%;
                 }
@@ -248,8 +263,8 @@
     gap: 16px;
 
     h1 {
-       font-size: 32px;
-       font-weight: normal; 
+        font-size: 32px;
+        font-weight: normal;
     }
 
     form {
@@ -258,12 +273,12 @@
         align-items: center;
         width: 100%;
         gap: 8px;
-        
+
         .formRow {
             width: 100%;
             display: flex;
             gap: 8px;
-            
+
             input {
                 width: 50%;
                 background: black;
@@ -272,7 +287,7 @@
                 font-size: 20px;
             }
         }
-        
+
         textarea {
             box-sizing: border-box;
             width: 100%;
@@ -329,7 +344,7 @@
                 transform: rotate(-90deg)
             }
         }
-        
+
         .header {
             width: 100%;
             height: 56px;
@@ -349,7 +364,7 @@
         .dropdown {
             filter: brightness(100%) invert(1);
             transition: 0.2s ease all;
-            
+
             &.open {
                 transform: rotate(-90deg);
             }
@@ -371,6 +386,7 @@
                 color: #ED2E24;
                 text-shadow: 2px 2px black;
             }
+
             p {
                 font-size: 24px;
             }
