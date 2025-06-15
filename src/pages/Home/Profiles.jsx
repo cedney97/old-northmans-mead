@@ -34,10 +34,10 @@ const Profiles = () => {
                     ))
                 }
             </div>
-            <div className={styles.profileInfo}>
+            {/* <div className={styles.profileInfo}>
                 <h1>{selectedProfile.rune_name}</h1>
                 <p>{selectedProfile.rune_description}</p>
-            </div>
+            </div> */}
         </section>
     )
 }

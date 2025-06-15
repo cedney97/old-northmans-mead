@@ -13,7 +13,7 @@
     width: 100%;
     position: relative;
     height: 256px;
-    background-image: url("assets/hero.jpg");
+    background-image: url("assets/hero2.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -46,6 +46,7 @@
     }
 
     p {
+        font-family: "Amiri";
         font-size: 28px;
         width: 50%;
         text-align: center;
@@ -122,7 +123,7 @@
 .profile {
     width: 15%;
     border: 2px solid #ED2E24;
-    height: 742px;
+    height: 650px;
     transition: 0.2s ease all;
     display: flex;
     flex-direction: column;

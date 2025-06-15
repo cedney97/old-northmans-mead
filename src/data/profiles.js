@@ -70,7 +70,7 @@ export const profiles = [
         rune_name: "Berkana",
         rune_description: "Renewal",
         verb_image: herbal_verb,
-        verb: "Renewing"
+        verb: "Rejuvinating"
     }, {
         name: "Holiday Spiced",
         color: "#161616",

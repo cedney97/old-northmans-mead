@@ -27,7 +27,6 @@ const Profile = ({
             <p>{profile.name}</p>
             <div className={styles.buttons}>
                 <button onClick={handleScroll}>Preorder Now</button>
-                <button onClick={() => setSelectedProfile(profile)}>View Flavor Profile</button>
             </div>
         </div>
     )
