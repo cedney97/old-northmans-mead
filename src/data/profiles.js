@@ -16,11 +16,11 @@ import apple_spiced_crest from "assets/crests/apple-spiced-crest.png"
 import herbal_crest from "assets/crests/herbal-crest.png"
 import holiday_spiced_crest from "assets/crests/holiday-spiced-crest.png"
 
-import old_mjodurt_verb from "assets/verbs/herbal-verb.png"
-import oak_n_orange_verb from "assets/verbs/herbal-verb.png"
-import apple_spiced_verb from "assets/verbs/herbal-verb.png"
-import herbal_verb from "assets/verbs/herbal-verb.png"
-import holiday_spiced_verb from "assets/verbs/herbal-verb.png"
+import old_mjodurt_verb from "assets/verbs/old-mjodurt.jpg"
+import oak_n_orange_verb from "assets/verbs/oak-n-orange.jpg"
+import apple_spiced_verb from "assets/verbs/apple-spiced.jpg"
+import herbal_verb from "assets/verbs/herbal.jpg"
+import holiday_spiced_verb from "assets/verbs/holiday-spiced.jpg"
 
 export const profiles = [
     {
