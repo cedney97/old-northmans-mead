@@ -5,10 +5,11 @@ import styles from './Home.module.scss'
 import Profiles from './Profiles'
 import Different from './Different'
 import banner from 'assets/banner.png'
+import logo from 'assets/logo.png'
 import ContactForm from './ContactForm'
 import { useScroll } from '../../contexts/ScrollContext'
 import Mission from './Mission'
-import viking from 'assets/viking5.jpg'
+import viking from 'assets/vikingdarker.jpg'
 
 const HomePage = () => {
     const { handleScroll } = useScroll()
@@ -27,7 +28,7 @@ const HomePage = () => {
             <img src={viking} style={{ width: "100%", height: "auto" }}></img>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
             <ContactForm />
-            <Navbar />
+            <img src={logo} height="128px" width="128px" style={{ marginBottom: "24px" }}></img>
         </div>
     )
 }
