@@ -15,10 +15,6 @@ const HomePage = () => {
 
     return (
         <div className={styles.page}>
-            <Notice>
-                <p>AVAILABLE <b>THIS SUMMER</b> <span style={{ textDecoration: "underline", cursor: "pointer" }} onClick={handleScroll}>PREORDER NOW</span></p>
-            </Notice>
-            <Navbar />
             <Hero />
             <Mission />
             <Different />
