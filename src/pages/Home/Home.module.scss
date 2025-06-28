@@ -154,6 +154,10 @@
         border-bottom: 2px solid #ED2E24;
         transition: 0.2s ease all;
         cursor: pointer;
+
+        img {
+            transition: 0.2s ease all;
+        }
     }
 
     p {
@@ -162,7 +166,8 @@
     }
 
     .mockup {
-        width: 75%;
+        width: 90%;
+        transition: 0.2s ease all;
     }
 
     .buttons {
