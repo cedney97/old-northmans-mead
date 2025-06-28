@@ -5,6 +5,7 @@ import { useState } from 'react'
 import ProfileInfo from './ProfileInfo'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { useScroll } from '../../contexts/ScrollContext'
+import BackgroundRotator from '../../components/util/BackgroundRotator'
 
 const Profiles = () => {
     const [selectedProfile, setSelectedProfile] = useState(profiles[0])
@@ -13,14 +14,16 @@ const Profiles = () => {
 
     return (
         <section className={styles.profilesSection}>
-            <div
-                className={styles.highlight}
-                style={{
-                    backgroundImage: `url(${selectedProfile.verb_image})`
-                }}
-            >
-                <p><span>{selectedProfile?.verb}</span><br />The Viking Spirit</p>
-                <button onClick={handleScroll}>Buy Our Mead</button>
+            <div className={styles.highlight}>
+                <BackgroundRotator image={selectedProfile.verb_image} />
+                <div className={styles.highlightContent}>
+                    <p>
+                        <span>{selectedProfile?.verb}</span>
+                        <br />
+                        The Viking Spirit
+                    </p>
+                    <button onClick={handleScroll}>Buy Our Mead</button>
+                </div>
             </div>
             <div className={styles.profiles}>
                 {

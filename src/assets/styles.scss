@@ -20,3 +20,9 @@
 h1 {
     font-family: "Norse"
 }
+
+.mobile-gone {
+    @include respond-max(sm) {
+        display: none;
+    }
+}

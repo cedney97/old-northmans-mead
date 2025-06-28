@@ -43,7 +43,7 @@ const Profile = ({
             ></img>
             <p>{profile.name}</p>
             <div className={styles.buttons}>
-                <button onClick={handleScroll}>Preorder Now</button>
+                <button onClick={handleScroll}>Preorder <span className="mobile-gone">Now</span></button>
             </div>
         </div>
     )
