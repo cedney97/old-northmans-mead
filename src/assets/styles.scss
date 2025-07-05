@@ -12,6 +12,11 @@
     src: url("./fonts/NorseBold-2Kge.otf")
 }
 
+@font-face {
+    font-family: "Viner";
+    src: url("./fonts/VINERITC.TTF")
+}
+
 * {
     font-family: "Alegreya Sans SC";
     color: white;
@@ -25,4 +30,8 @@ h1 {
     @include respond-max(sm) {
         display: none;
     }
+}
+
+.red {
+    color: #ED2E24
 }
