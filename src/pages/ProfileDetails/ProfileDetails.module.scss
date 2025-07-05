@@ -103,8 +103,8 @@
 .image {
     flex: 1;
     background-size: cover;
-    background-position: center;
     transition: 0.25s ease all;
+
 
     @include respond-max(md) {
         flex: 0 1 auto;

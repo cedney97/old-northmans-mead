@@ -65,7 +65,8 @@ export const profiles = [
                 </ul>
             </div>
         </>,
-        details_images: [old_mjodurt_herb]
+        details_images: [old_mjodurt_herb],
+        image_styles: [{ backgroundPosition: "center" }]
     }, {
         name: "Oak-N-Orange",
         color: "#614D38",
@@ -83,7 +84,8 @@ export const profiles = [
             <p>Our Oak-N-Orange Mead harnesses the <span className="red">Invigorating</span> power of URUZ to help restore your energy, strengthen resolve, and provide the courage to accelerate new growth!</p>
             <p>This powerful brew will impart classic hints of orange, black pepper, and cherry all finished off with English Oak!</p>
         </>,
-        details_images: [oak_n_orange_herb_1, oak_n_orange_herb_2]
+        details_images: [oak_n_orange_herb_1, oak_n_orange_herb_2],
+        image_styles: [{}, { backgroundPosition: "center" }]
     }, {
         name: "Apple-Spiced",
         color: "#55352E",
@@ -101,7 +103,8 @@ export const profiles = [
             <p>Our Applie-Spiced Mead <span className="red"><em>Warms</em></span> and <span className="red"><em>Illuminates</em></span> the way with KENAZ's energy like that of a torch dispelling darkness and serving as a beacon of wisdom in a world filled with uncertainty.</p>
             <p>Complimenting our fresh apples is whole cinammon, coarsely ground nutmeg, and other warming spices!</p>
         </>,
-        details_images: [apple_spiced_herb_1, apple_spiced_herb_2]
+        details_images: [apple_spiced_herb_1, apple_spiced_herb_2],
+        image_styles: [{}, {}]
     }, {
         name: "Herbal",
         color: "#2A4739",
@@ -121,7 +124,8 @@ export const profiles = [
             <p>YARROW - Yarrow (Achillea Millefolium) has been used for thousands of years for its potential health benefits. Benefits include helping alleviate inflamation, wound healing, and digestive health. Its genus name, Achillea, refers to the warrior Achilles in Greek Mythology, as he used yarrow to treat his soldiers' wounds</p>
             <p>SWEET GALE (or BOG MYRTLE) - Bog Myrtle has a long history of use in traditional medicine and cuisine. The leaves and berries of the plant contain a number of bioactive compounds, including tannins, flavonoids, and essential oils, that are believed to have a range of health benefits. Bog Myrtle has been used to treat digestive issues, respiratory infections, and skin conditions.</p>
         </>,
-        details_images: [herbal_herb_1, herbal_herb_2]
+        details_images: [herbal_herb_1, herbal_herb_2],
+        image_styles: [{}, {}]
     }, {
         name: "Holiday Spiced",
         color: "#161616",
@@ -140,6 +144,7 @@ export const profiles = [
             <p>Our Holiday-Spiced Mead calls on the <span className="red">Transformational</span> energy of ISA to remind us that Winter is a time for introspection and a time for pause. Spring is before us - with it comes Re-Birth and new life!</p>
             <p>This special edition brew is infused with Cranberries, Spruce Tips, Juniper Berries, and Clove to warm the soul.</p>
         </>,
-        details_images: [holiday_spiced_herb_1, holiday_spiced_herb_2, holiday_spiced_herb_3]
+        details_images: [holiday_spiced_herb_1, holiday_spiced_herb_2, holiday_spiced_herb_3],
+        image_styles: [{}, { backgroundPosition: "center" }, { backgroundPosition: "center" }]
     }
 ]

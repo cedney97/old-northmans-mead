@@ -1,25 +1,11 @@
 import { useEffect, useState } from "react"
 import { profiles } from "../../data/profiles"
 import styles from './ProfileDetails.module.scss'
+import CyclingImage from "../../components/util/CyclingImage"
 
 const Details = ({
     profile
 }) => {
-    const [imageIndex, setImageIndex] = useState(0)
-
-    useEffect(() => {
-        const handleAnimation = () => {
-            setImageIndex(prev => (prev + 1) % profile.details_images.length)
-        }
-
-        const interval = setInterval(handleAnimation, 5000)
-        return () => clearInterval(interval)
-    }, [profile.details_images])
-
-    useEffect(() => {
-        setImageIndex(0)
-    }, [profile])
-
     return (
         <div className={styles.container}>
             <div className={styles.runeContainer}>
@@ -34,7 +20,11 @@ const Details = ({
                 <h3>{profile.subtitle}</h3>
                 {profile.spiel}
             </div>
-            <div className={styles.image} style={{ backgroundImage: `url(${profile.details_images[imageIndex]})` }}></div>
+            <CyclingImage
+                images={profile.details_images}
+                className={styles.image}
+                imageStyles={profile.image_styles}
+            />
         </div>
     )
 }
