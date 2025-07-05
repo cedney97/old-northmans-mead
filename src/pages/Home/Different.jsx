@@ -1,6 +1,6 @@
 import styles from './Home.module.scss'
 import divider from "assets/divider.png"
-import meadowsweet_1 from "assets/herbs/meadowsweet-1.jpg"
+import meadowsweet_1 from "assets/herbs/meadowsweet-1.webp"
 import meadowsweet_2 from "assets/herbs/meadowsweet-2.jpeg"
 import CyclingImage from '../../components/util/CyclingImage'
 

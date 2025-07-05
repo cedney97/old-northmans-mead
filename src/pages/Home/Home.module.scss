@@ -430,6 +430,7 @@
 
         .image {
             width: 64%;
+            min-height: 400px;
 
             @include respond-max(sm) {
                 width: 100%;
