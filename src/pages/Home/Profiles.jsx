@@ -39,10 +39,6 @@ const Profiles = () => {
             <Details
                 profile={selectedProfile}
             />
-            {/* <div className={styles.profileInfo}>
-                <h1>{selectedProfile.rune_name}</h1>
-                <p>{selectedProfile.rune_description}</p>
-            </div> */}
         </section>
     )
 }

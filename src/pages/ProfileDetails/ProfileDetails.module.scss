@@ -29,12 +29,20 @@
         font-size: 36px;
         font-weight: bold;
         color: #ED2E24;
-        font-family: "Norse"
+        font-family: "Norse";
+
+        @include respond-max(sm) {
+            font-size: 24px;
+        }
     }
 
     p {
         font-size: 24px;
         color: #ED2E24;
+
+        @include respond-max(sm) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -57,12 +65,20 @@
         font-weight: bold;
         color: #ed2e24;
         font-family: "Norse";
+
+        @include respond-max(sm) {
+            font-size: 32px;
+        }
     }
 
     h3 {
         font-size: 32px;
         font-weight: normal;
         color: #ed2e24;
+
+        @include respond-max(sm) {
+            font-size: 24px;
+        }
     }
 
     div {
@@ -73,6 +89,10 @@
 
     p {
         font-size: 20px;
+
+        @include respond-max(sm) {
+            font-size: 16px;
+        }
     }
 
     @include respond-max(md) {
