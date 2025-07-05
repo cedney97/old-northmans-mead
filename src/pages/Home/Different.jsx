@@ -29,7 +29,7 @@ const Different = () => {
                 <div className={styles.text}>
                     <h2>Herbal Benefits:</h2>
                     <p>Meadowsweet is an herb in the rose family. For centuries, it's been found to be used in Scandinavian meads for its healing properties.</p>
-                    <p>In traditional medicine, it's been used to treat heartburn, stomach ulcers, colds, join pain, arthritis, and goud. It's also been administered as a diuretic to increase urine output in people with kidney or bladder infections.</p>
+                    <p>In traditional medicine, it's been used to treat heartburn, stomach ulcers, colds, joint pain, arthritis, and gout. It's also been administered as a diuretic to increase urine output in people with kidney or bladder infections.</p>
                     <p>A Honey Bee's Favorite: The sweet scent of these flowers draws many bees, and other pollinators, to Meadowsweet for its rich pollen.</p>
                 </div>
                 <div style={{ width: "100%" }}>
