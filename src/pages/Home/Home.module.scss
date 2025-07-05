@@ -381,12 +381,10 @@
 
             .meadow2 {
                 height: 100%;
-                aspect-ratio: 1;
 
                 @include respond-max(sm) {
                     width: 100%;
                     height: auto;
-                    aspect-ratio: auto;
                 }
             }
 
