@@ -16,15 +16,11 @@ const HomePage = () => {
 
     return (
         <div className={styles.page}>
-            <Notice>
-                <p>AVAILABLE <b>THIS SUMMER</b> <span style={{ textDecoration: "underline", cursor: "pointer" }} onClick={handleScroll}>PREORDER NOW</span></p>
-            </Notice>
-            <Navbar />
             <Hero />
             <Mission />
             <Different />
             <Profiles />
-            <h1 style={{ fontSize: "64px" }}>Fara i Viking!</h1>
+            <h1 style={{ fontSize: "64px", textAlign: "center", padding: "16px" }}><span style={{ fontSize: "50px", fontFamily: "Norse" }}>If you are looking for something new and invigorating, <br />"Let's go on an adventure" together!</span><br />Fara i Viking!</h1>
             <img src={viking} style={{ width: "100%", height: "auto" }}></img>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
             <ContactForm />
