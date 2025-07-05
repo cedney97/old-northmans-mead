@@ -44,7 +44,7 @@ export const profiles = [
         subtitle: "The ONM Standard (Pronounced Mee-Yurd Ert)",
         description: "Infused with Lemon Balm, our standard mead imparts the Inspiring energy of the rune, Ansuz, to enhance connections, wisdom, and understanding with our Higher Power.",
         rune_name: "Ansuz",
-        rune_description: "The Breath Of Odin",
+        rune_description: '"The Breath Of Odin"',
         verb_image: old_mjodurt_verb,
         verb: "Inspiring",
         spiel: <>
@@ -76,7 +76,7 @@ export const profiles = [
         subtitle: "The Boldest of our Meads",
         description: "With classic hints of orange, whole peppercorns, cherries, & finished with English Oak, the Oak-n-Orange Mead harnesses the Invigorating energy of the rune Uruz to help restore your energy, strengthen resolve, and provide the courage to accelerate new growth.",
         rune_name: "Uruz",
-        rune_description: "Strength",
+        rune_description: '"Strength"',
         verb_image: oak_n_orange_verb,
         verb: "Invigorating",
         spiel: <>
@@ -94,7 +94,7 @@ export const profiles = [
         subtitle: "Warm and Inviting",
         description: "Including cored Apples along with cinnamon, nutmeg, all-spice, and clove, our Apple-Spiced Mead Warms and Illuminates the way with the rune Kenaz's energy like that of torch dispelling darkness and serving as a beacon of wisdom in a world filled with uncertainty.",
         rune_name: "Kenaz",
-        rune_description: "The Torch",
+        rune_description: '"The Torch"',
         verb_image: apple_spiced_verb,
         verb: "Illuminating",
         spiel: <>
@@ -112,7 +112,7 @@ export const profiles = [
         subtitle: "Healing Mind & Body",
         description: "Complimented by fresh lemon and infused with rosemary, ginger, red clover, & other traditional herbs, our Herbal Mead captures the Healing energy of the rune Berkana and promotes rejuvenation, new growth, & fertility—in mind and body!",
         rune_name: "Berkana",
-        rune_description: "Renewal",
+        rune_description: '"Renewal"',
         verb_image: herbal_verb,
         verb: "Rejuvinating",
         spiel: <>
@@ -132,7 +132,7 @@ export const profiles = [
         subtitle: "A Brew for all Celebrations",
         description: "Infused with a warming combination of cranberries, juniper berries, spruce tips, and clove, our Holiday-Spiced Mead calls on the Transformational energy of the rune Isa to remind us that Winter is also a time for introspection and an opportunity to pause.",
         rune_name: "Isa",
-        rune_description: "Ice/Stillness",
+        rune_description: 'Ice/"Stillness"',
         verb_image: holiday_spiced_verb,
         verb: "Transforming",
         spiel: <>
