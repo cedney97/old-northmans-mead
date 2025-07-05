@@ -405,6 +405,12 @@
     }
 
     .vikingName {
+        margin-top: 80px;
+
+        @include respond-max(sm) {
+            margin-top: 0;
+        }
+
         h3 {
             font-size: 32px;
             font-weight: normal;

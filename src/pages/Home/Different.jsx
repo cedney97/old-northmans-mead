@@ -32,11 +32,13 @@ const Different = () => {
                     <p>In traditional medicine, it's been used to treat heartburn, stomach ulcers, colds, join pain, arthritis, and goud. It's also been administered as a diuretic to increase urine output in people with kidney or bladder infections.</p>
                     <p>A Honey Bee's Favorite: The sweet scent of these flowers draws many bees, and other pollinators, to Meadowsweet for its rich pollen.</p>
                 </div>
-                <div className={styles.images}>
-                    <img className={styles.meadow1} src={meadowsweet_1}></img>
-                    <img className={styles.meadow2} src={meadowsweet_2}></img>
+                <div style={{ width: "100%" }}>
+                    <div className={styles.images}>
+                        <img className={styles.meadow1} src={meadowsweet_1}></img>
+                        <img className={styles.meadow2} src={meadowsweet_2}></img>
+                    </div>
+                    <p className={styles.bee}>A Honey Bee's Favorite: The sweet scent of these flowers draws many bees, and other pollinators, to Meadowsweet for its rich pollen.</p>
                 </div>
-                <p className={styles.bee}>A Honey Bee's Favorite: The sweet scent of these flowers draws many bees, and other pollinators, to Meadowsweet for its rich pollen.</p>
             </div>
             <div className={styles.vikingName}>
                 <h3><span className="red">Meadowsweet</span> has been referred to as the "Mead Herb" by many modern-day Scandinavians because of its Old Norse / Danish name:</h3>
