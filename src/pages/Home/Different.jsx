@@ -9,7 +9,7 @@ const Different = () => {
     return (
         <section className={styles.different}>
             <h1>How ONM Is Different</h1>
-            <p>Old Northmen's Mead isn't just a drink: it's a return to something real. Brewed with raw honey, fresh water, and infused fruits, herbs, and spices, our mead honors ancient traditions while embracing a cleaner, more intentional lifestyle. No shortcuts. No additives. Just bold flavor, natural strength, and a story in every bottle.</p>
+            <p>Old Northmen's Mead isn't just another brew, it's an homage to our ancestors and a beverage that comes with nature's source of energy - Honey. Brewed with raw honey, fresh water, and infused fruits, herbs, and spices, our mead honors ancient traditions while embracing a cleaner, more intentional lifestyle. No shortcuts. No additives. Just bold flavor, natural strength, and a story in every bottle.</p>
             <div className={styles.points}>
                 <div>
                     <h3>Infused, Not Flavored</h3>
