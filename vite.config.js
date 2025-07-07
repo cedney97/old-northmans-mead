@@ -13,5 +13,5 @@ export default defineConfig({
       data: path.resolve(__dirname, "src/data")
     }
   },
-  base: "/old-northmens-mead/"
+  base: "/"
 })
