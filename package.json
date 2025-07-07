@@ -3,11 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://cedney97.github.io",
   "scripts": {
     "start": "vite --host",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
