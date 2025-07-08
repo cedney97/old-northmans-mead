@@ -3,7 +3,9 @@ import styles from './Home.module.scss'
 const Hero = () => {
     return (
         <div className={styles.hero}>
-            <p>Sip The Saga<br />Taste The Legend<br />Available This Summer</p>
+            <h1>Old Northmen's Mead</h1>
+            <p>Sip The Saga<br />Taste The Legend</p>
+            <h2>Available this Summer</h2>
         </div>
     )
 }
