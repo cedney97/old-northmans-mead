@@ -1,14 +1,25 @@
+import { Route, Routes } from 'react-router'
 import Layout from './components/template/Layout'
-import { ScrollProvider } from './contexts/ScrollContext'
-import HomePage from './pages/Home'
+import { routes } from './data/routes'
+import Contexts from './contexts'
+import { map } from 'lodash'
 
 function App() {
   return (
-    <ScrollProvider>
+    <Contexts>
       <Layout>
-        <HomePage />
+        <Routes>
+          {
+            map(routes, (route) => (
+              <Route
+                key={route.path}
+                {...route}
+              />
+            ))
+          }
+        </Routes>
       </Layout>
-    </ScrollProvider>
+    </Contexts>
   )
 }
 
