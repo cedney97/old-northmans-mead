@@ -1,4 +1,4 @@
-import styles from './Home.module.scss'
+import styles from './OurMead.module.scss'
 
 const ProfileInfo = ({
     profile
@@ -10,10 +10,10 @@ const ProfileInfo = ({
                 borderColor: profile?.brightColor,
                 ...(
                     profile
-                    ?
-                    {backgroundImage: "none"}
-                    :
-                    {}
+                        ?
+                        { backgroundImage: "none" }
+                        :
+                        {}
                 )
             }}
         >

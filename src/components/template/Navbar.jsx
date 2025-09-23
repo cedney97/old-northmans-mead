@@ -1,5 +1,4 @@
 import logo from 'assets/logo_sans_words.png'
-import knot from 'assets/knot.png'
 import styles from './Template.module.scss'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
@@ -21,12 +20,12 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.side}>
                 <h1 onClick={() => navigate("/home")}>Home</h1>
-                <h1>Foundation</h1>
+                <h1 onClick={() => navigate("/our-mead")}>Our Mead</h1>
             </div>
             <div className={`${styles.logoContainer} ${scrolled ? styles.scrolled : ""}`}>
                 <img src={logo} alt="ONM Logo"></img>
             </div>
-            <div className={styles.side}>
+            <div className={styles.side} style={{ alignItems: "end" }}>
                 <h1>Mead</h1>
                 <h1>Contact</h1>
             </div>
