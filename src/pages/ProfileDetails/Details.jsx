@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import { profiles } from "../../data/profiles"
 import styles from './ProfileDetails.module.scss'
 import CyclingImage from "../../components/util/CyclingImage"
 
