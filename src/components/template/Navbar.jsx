@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.side}>
+            <div className={styles.side} style={{ alignItems: "start" }}>
                 <h1 onClick={() => navigate("/home")}>Home</h1>
                 <h1 onClick={() => navigate("/our-mead")}>Our Mead</h1>
             </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className={styles.side} style={{ alignItems: "end" }}>
                 <h1>Mead</h1>
-                <h1>Contact</h1>
+                <h1 onClick={() => navigate("/contact")}>Contact</h1>
             </div>
         </nav>
     )
