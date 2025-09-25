@@ -4,12 +4,12 @@ import meadowsweet_1 from "assets/herbs/meadowsweet-1.webp"
 import meadowsweet_2 from "assets/herbs/meadowsweet-2.jpeg"
 import CyclingImage from '../../components/util/CyclingImage'
 import Profiles from './Profiles'
+import Page from '../../components/template/Page'
 
 const OurMeadPage = () => {
     return (
-        <div className={`page ${styles.page}`}>
+        <Page className={styles.page}>
             <Profiles />
-
             <h1>The Foundation of Old Northmen's Mead</h1>
             <img src={divider} className={styles.divider}></img>
             <h1 className={styles.meadowsweet} style={{ marginTop: "32px" }}>Meadow&shy;sweet</h1>
@@ -29,7 +29,7 @@ const OurMeadPage = () => {
                 <h3><span className="red">Meadowsweet</span> has been referred to as the "Mead Herb" by many modern-day Scandinavians because of its Old Norse / Danish name:</h3>
                 <p className={styles.mjodurt}>Mjodurt</p>
             </div>
-        </div>
+        </Page>
     )
 }
 

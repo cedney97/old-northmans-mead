@@ -1,16 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router"
-import { routes } from "../data/routes"
-import { map } from "lodash"
+import { BrowserRouter } from "react-router"
 import { ScrollProvider } from "./ScrollContext"
+import { SidebarProvider } from "./SidebarContext"
 
 const Contexts = ({
     children
 }) => {
     return (
         <BrowserRouter>
-            <ScrollProvider>
-                {children}
-            </ScrollProvider>
+            <SidebarProvider>
+                <ScrollProvider>
+                    {children}
+                </ScrollProvider>
+            </SidebarProvider>
         </BrowserRouter>
     )
 }

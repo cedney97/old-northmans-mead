@@ -1,0 +1,29 @@
+@use "assets/breakpoints.scss" as *;
+
+.page {
+    .hero {
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        background-image: url("assets/meadguard.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 64px;
+        text-align: center;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .divider {
+        height: 20px;
+        max-width: 100%;
+    }
+}

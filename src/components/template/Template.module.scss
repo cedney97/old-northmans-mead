@@ -24,6 +24,11 @@
     background: black;
     gap: 32px;
 
+    @include respond-max(sm) {
+        padding: 8px;
+        height: 48px;
+    }
+
     .side {
         display: flex;
         gap: 32px;
@@ -74,8 +79,8 @@
         transform: translate(-50%);
 
         @include respond-max(sm) {
-            width: 150px;
-            height: 75px;
+            width: 125px;
+            height: 62.5px;
             top: 24px;
         }
 
@@ -118,6 +123,7 @@
     align-items: center;
     gap: 32px;
     width: 100%;
+    overflow-x: hidden;
 
     .banner {
         margin: 64px 0;
