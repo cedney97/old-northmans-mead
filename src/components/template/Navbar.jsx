@@ -34,6 +34,7 @@ const Navbar = () => {
                 <div className={styles.side} style={{ alignItems: "start" }}>
                     <h1 onClick={() => navigate("/home")}>Home</h1>
                     <h1 onClick={() => navigate("/our-mead")}>Our Mead</h1>
+                    <h1 onClick={() => navigate("/how-its-made")}>How It's Made</h1>
                 </div>
             }
             <div className={`${styles.logoContainer} ${scrolled ? styles.scrolled : ""}`}>
@@ -43,6 +44,7 @@ const Navbar = () => {
                 !isMobile &&
                 <div className={styles.side} style={{ alignItems: "end" }}>
                     <h1 onClick={() => navigate("/mead-guard")}>Mead+Guard</h1>
+                    <h1 onClick={() => navigate("/reviews")}>Reviews</h1>
                     <h1 onClick={() => navigate("/contact")}>Contact</h1>
                 </div>
             }

@@ -192,18 +192,34 @@
         font-size: 64px;
         text-align: center;
         padding: 16px;
+        font-family: "Norse";
+
+        * {
+            font-family: Norse;
+        }
 
         @include respond-max(sm) {
             font-size: 32px;
         }
+    }
 
-        span {
-            font-size: 50px;
-            font-family: "Norse";
+    .vikingContainer {
+        display: flex;
+        flex-direction: center;
+        background: black;
+        padding: 2rem 0;
 
-            @include respond-max(sm) {
-                font-size: 24px;
-            }
+        img {
+            max-width: 900px;
+            width: 100%;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            -webkit-mask-size: cover;
+            mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: cover;
         }
     }
 }

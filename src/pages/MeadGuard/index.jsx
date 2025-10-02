@@ -11,24 +11,27 @@ const MeadGuard = () => {
         <Page className={styles.page}>
             <img src={meadguard} className={styles.hero} />
             <h1>Do you want to Join the Adventure and Support Old Northmen's Mead?</h1>
-            <h2 style={{ marginTop: "-32px" }}>Sign up for the MEAD + GUARD and receive the First of it's Kind, ONM Shirt and Mug plus discounts and More!</h2>
+            <h2 style={{ marginTop: "-32px" }}>Sign up for the Mead+Guard and receive the First of it's Kind, ONM Shirt and Mug plus discounts and More!</h2>
             <img src={divider} className={styles.divider}></img>
-            <h1>Mead + Guard Tiers</h1>
+            <h1>Mead+Guard Tiers</h1>
             <div className={styles.points}>
                 <div>
-                    <h3>Tier 1: $100+ Donation</h3>
-                    <p>Members get a shirt, Mead + Guard Tankard, and $5 off their next selection of Old Northmen's Mead!</p>
+                    <h3>Level En (One): The Shield Wall</h3>
+                    <p className={styles.price}>$100</p>
+                    <p>Mead+Guard Shirt | Tankard | $5 off Next Bottle</p>
                 </div>
                 <div>
-                    <h3>Tier 2: $250+ Donation</h3>
-                    <p>Members get a shirt, Mead + Guard Tankard, and their choice of a bottle of Old Northmen's Mead (including the Holiday-Spiced ready for the Holidays)!</p>
+                    <h3>Level To (Two): The Brewer's Select</h3>
+                    <p className={styles.price}>$250</p>
+                    <p>Mead+Guard Shirt | Tankard | 1 Free Bottle (Including Holiday-Spiced)</p>
                 </div>
                 <div>
-                    <h3>Tier 3: $500+ Donation</h3>
-                    <p>Members get a shirt, Mead + Guard Tankard, and a bottle of each profile of Old Northmen's Mead ready for the Holidays!</p>
+                    <h3>Level Tre (Three): The Jarls of ONM</h3>
+                    <p className={styles.price}>$500+</p>
+                    <p>Mead+Guard Shirt | Tankard | 1 Free Bottle of Each of the 5 Profiles</p>
                 </div>
             </div>
-            <h1>Mead + Guard Products</h1>
+            <h1>Mead+Guard Products</h1>
             <div className={styles.products}>
                 <div>
                     <h3>T-Shirt</h3>

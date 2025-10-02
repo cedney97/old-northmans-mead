@@ -8,8 +8,10 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
-            <h1 className={styles.callToAction}><span>If you are looking for something new and invigorating, <br />"Let's go on an adventure" together!</span><br />Fara i Viking!</h1>
-            <img src={viking} style={{ width: "100%", height: "auto" }}></img>
+            <h1 className={styles.callToAction}>Greeting of <em>Fara i Viking</em></h1>
+            <div className={styles.vikingContainer}>
+                <img src={viking} alt="Viking"></img>
+            </div>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
             <ContactForm />
             <img src={logo} height="128px" width="128px" style={{ marginBottom: "24px" }}></img>
