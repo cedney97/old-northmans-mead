@@ -2,8 +2,8 @@ import Page from "../../components/template/Page"
 import styles from './MeadGuard.module.scss'
 import meadguard from 'assets/meadguard.png'
 import divider from "assets/divider.png"
-import shirt1 from 'assets/shirt1.jpg'
-import shirt2 from 'assets/shirt2.jpg'
+import shirt1 from 'assets/shirt_1.jpg'
+import shirt2 from 'assets/shirt_2.jpg'
 import tankard from 'assets/tankard.png'
 
 const MeadGuard = () => {
