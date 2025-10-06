@@ -6,11 +6,13 @@ import { map } from 'lodash'
 import ReviewCard from './ReviewCard'
 
 const ReviewsMarquee = () => {
+
     return (
         <Marquee
             gradientColor="black"
             gradient
             autoFill
+            pauseOnHover
         >
             {
                 map(reviews, (review, i) => (

@@ -6,8 +6,8 @@ import Foundation from './Foundation'
 const OurMeadPage = () => {
     return (
         <Page className={styles.page}>
-            <Profiles />
             <Foundation />
+            <Profiles />
         </Page>
     )
 }

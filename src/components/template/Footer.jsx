@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <img src={banner} alt="Runic Banner" className={styles.banner}></img>
-            <h1 className={styles.callToAction}>Greeting of <em>Fara i Viking</em></h1>
+            <h1 className={styles.callToAction}><span>If you are looking for something new and invigorating, <br />"Let's go on an adventure" together!</span><br />Fara i Viking!</h1>
             <div className={styles.vikingContainer}>
                 <img src={viking} alt="Viking"></img>
             </div>
