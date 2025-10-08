@@ -1,75 +1,47 @@
-import { map } from "lodash"
-import Carousel from "react-multi-carousel"
-import { reviews } from "./data"
-import ReviewCard from "./ReviewCard"
+import ReviewCard from './ReviewCard'
+import { reviews } from './data'
+import { useEffect, useState, useRef } from 'react'
+import styles from './Reviews.module.scss'
+import { ArrowLeft, ArrowRight } from '@mui/icons-material'
 
-const ReviewsCarousel = ({ }) => {
+const ReviewsCarousel = () => {
+    const [index, setIndex] = useState(0)
+    const timerRef = useRef(null)
 
-    console.log(reviews)
+    const nextIndex = () => {
+        setIndex(prev => (prev + 1) % reviews.length)
+        resetTimer()
+    }
+
+    const prevIndex = () => {
+        setIndex(prev => (prev + (reviews.length - 1)) % reviews.length)
+        resetTimer()
+    }
+
+    const resetTimer = () => {
+        if (timerRef.current) clearInterval(timerRef.current)
+        timerRef.current = setInterval(() => {
+            setIndex(i => (i + 1) % reviews.length)
+        }, 5000)
+    }
+
+    useEffect(() => {
+        resetTimer()
+        return () => clearInterval(timerRef.current)
+    }, [])
 
     return (
-        <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container-with-dots"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite
-            itemClass=""
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-                desktop: {
-                    breakpoint: {
-                        max: 3000,
-                        min: 1024
-                    },
-                    items: 3,
-                    partialVisibilityGutter: 40
-                },
-                mobile: {
-                    breakpoint: {
-                        max: 464,
-                        min: 0
-                    },
-                    items: 1,
-                    partialVisibilityGutter: 30
-                },
-                tablet: {
-                    breakpoint: {
-                        max: 1024,
-                        min: 464
-                    },
-                    items: 2,
-                    partialVisibilityGutter: 30
-                }
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-        >
-            {
-                map(reviews, (review, i) => (
-                    <ReviewCard
-                        key={i}
-                        {...review}
-                    />
-                ))
-            }
-        </Carousel>
+        <div className={styles.carousel}>
+            <ArrowLeft
+                onClick={prevIndex}
+                sx={{ fontSize: 48, cursor: 'pointer' }}
+            />
+            <ReviewCard {...reviews[index]} isTyping />
+            <ArrowRight
+                onClick={nextIndex}
+                sx={{ fontSize: 48, cursor: 'pointer' }}
+            />
+        </div>
     )
 }
 

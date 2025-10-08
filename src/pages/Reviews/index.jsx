@@ -11,7 +11,11 @@ const ReviewsPage = () => {
             <h1 style={{ fontSize: "64px" }}>Reviews</h1>
             {
                 isMobile
-                    ? <ReviewsCarousel />
+                    ? <>
+                        <ReviewsCarousel />
+                        <ReviewsMarquee />
+                        <ReviewsMarquee direction="right" />
+                    </>
                     : <ReviewsMarquee />
             }
         </div>

@@ -26,7 +26,7 @@ const CyclingImage = ({
     }, [images])
 
     return (
-        <div className={`${className} ${styles.cyclingImage}`} style={{ backgroundImage: `url(${images[imageIndex]})`, transition: "0.25s ease all", ...imageStyle }}></div>
+        <div className={`${className || ""} ${styles.cyclingImage}`} style={{ backgroundImage: `url(${images[imageIndex]})`, transition: "0.25s ease all", ...imageStyle }}></div>
     )
 }
 
