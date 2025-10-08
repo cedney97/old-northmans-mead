@@ -2,7 +2,6 @@
 
 .card {
     width: 400px;
-    max-width: 100%;
     min-height: 200px;
     padding: 20px;
     background: #fdf8f3; // parchment-like
@@ -22,12 +21,22 @@
     border: 3px solid #3b2b1a;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
+    @include respond-max(sm) {
+        width: 200px;
+        min-height: 100px;
+        padding: 12px;
+    }
+
     .quote {
         width: 100%;
         font-size: 28px;
         font-weight: 600;
         text-align: left;
         color: #2c1b10;
+
+        @include respond-max(sm) {
+            font-size: 16px;
+        }
     }
 
     .name {
@@ -36,6 +45,11 @@
         font-weight: bold;
         margin-top: auto;
         color: #502c1e;
+
+
+        @include respond-max(sm) {
+            font-size: 18px;
+        }
     }
 
     // optional: add subtle rune-style corner accents

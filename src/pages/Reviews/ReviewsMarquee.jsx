@@ -5,10 +5,13 @@ import Marquee from 'react-fast-marquee'
 import { map } from 'lodash'
 import ReviewCard from './ReviewCard'
 
-const ReviewsMarquee = () => {
+const ReviewsMarquee = ({
+    direction = "left"
+}) => {
 
     return (
         <Marquee
+            direction={direction}
             gradientColor="black"
             gradient
             autoFill
