@@ -6,36 +6,77 @@
     h1 {
         font-size: 48px;
     }
+}
 
-    .assets {
+.assets {
+    display: flex;
+    gap: 48px;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include respond-max(sm) {
+        flex-direction: column;
+    }
+
+    .asset {
         display: flex;
         flex-direction: column;
-        gap: 48px;
-        width: 90%;
-        margin: auto;
+        align-items: center;
+        text-align: center;
 
-        .asset {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+        img,
+        video {
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-            img,
-            video {
-                max-width: 600px;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-                @include respond-max(sm) {
-                    max-width: 100%;
-                }
+            @include respond-max(sm) {
+                max-width: 100%;
             }
+        }
 
-            p {
-                margin-top: 12px;
-                font-size: 24px;
-                font-style: italic;
-                max-width: 600px;
+        p {
+            margin-top: 12px;
+            font-size: 24px;
+            font-style: italic;
+            max-width: 600px;
+
+            @include respond-max(sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            width: 75%;
+            text-align: center;
+            color: red;
+            font-size: 32px;
+            font-family: "Alegreya Sans SC";
+
+            @include respond-max(sm) {
+                width: 90%;
+                font-size: 20px;
             }
         }
     }

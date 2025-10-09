@@ -1,18 +1,20 @@
 import { map } from 'lodash'
 import styles from './HowItsMade.module.scss'
-import { assets } from './data'
+import { assets, steps } from './data'
 import Asset from './Asset'
+import Step from './Step'
 
 const HowItsMadePage = () => {
     return (
         <div className={"page " + styles.page}>
             <h1>How It's Made</h1>
-            <div className={styles.assets}>
+            <div className={styles.steps}>
                 {
-                    map(assets, (asset, i) => (
-                        <Asset
+                    map(steps, (step, i) => (
+                        <Step
+                            index={i}
                             key={i}
-                            {...asset}
+                            {...step}
                         />
                     ))
                 }

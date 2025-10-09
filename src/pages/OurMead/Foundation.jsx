@@ -10,7 +10,7 @@ const Foundation = () => {
             <h1>The Foundation of Old Northmen's Mead</h1>
             <img src={divider} className={styles.divider}></img>
             <h1 className={styles.meadowsweet} style={{ marginTop: "32px" }}>Meadowsweet</h1>
-            <p className={styles.titleCaption}>Every Profile of Old Northmens' Mead starts with Meadowsweet and is infused early on in the fermentation process</p>
+            <p className={styles.titleCaption}>Every Profile of Old Northmen's Mead starts with Meadowsweet and is infused early on in the fermentation process</p>
             <div className={styles.meadowsweetInfo}>
                 <div className={styles.text}>
                     <h2>Herbal Benefits:</h2>
