@@ -5,6 +5,7 @@ import divider from "assets/divider.png"
 import shirt1 from 'assets/shirt_1.jpg'
 import shirt2 from 'assets/shirt_2.jpg'
 import tankard from 'assets/tankard.png'
+import profiles from 'assets/profiles.png'
 
 const MeadGuard = () => {
     return (
@@ -44,6 +45,12 @@ const MeadGuard = () => {
                     <h3>Tankard</h3>
                     <div className={styles.images}>
                         <img src={tankard}></img>
+                    </div>
+                </div>
+                <div>
+                    <h3>Mead</h3>
+                    <div className={styles.images}>
+                        <img src={profiles} />
                     </div>
                 </div>
             </div>
