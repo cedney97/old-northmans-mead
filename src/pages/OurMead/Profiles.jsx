@@ -1,5 +1,5 @@
 import { profiles } from 'data/profiles'
-import styles from './Home.module.scss'
+import styles from './OurMead.module.scss'
 import Profile from './Profile'
 import { useState } from 'react'
 import { useScroll } from '../../contexts/ScrollContext'
@@ -8,7 +8,6 @@ import Details from '../ProfileDetails/Details'
 
 const Profiles = () => {
     const [selectedProfile, setSelectedProfile] = useState(profiles[0])
-    const { handleScroll } = useScroll()
 
     return (
         <section className={styles.profilesSection}>
@@ -33,7 +32,7 @@ const Profiles = () => {
                         <br />
                         The Viking Spirit
                     </p>
-                    <button onClick={handleScroll}>Buy Our Mead</button>
+                    <button>Buy Our Mead</button>
                 </div>
             </div>
             <Details

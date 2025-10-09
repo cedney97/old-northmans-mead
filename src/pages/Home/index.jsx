@@ -1,31 +1,19 @@
-import Navbar from 'components/template/Navbar'
-import Notice from 'components/template/Notice'
 import Hero from './Hero'
 import styles from './Home.module.scss'
-import Profiles from './Profiles'
 import Different from './Different'
-import banner from 'assets/banner.png'
-import logo from 'assets/logo.png'
-import ContactForm from './ContactForm'
-import { useScroll } from '../../contexts/ScrollContext'
 import Mission from './Mission'
-import viking from 'assets/vikingdarker.jpg'
+import { useScroll } from '../../contexts/ScrollContext'
+import { useEffect } from 'react'
+import Page from '../../components/template/Page'
 
 const HomePage = () => {
-    const { handleScroll } = useScroll()
 
     return (
-        <div className={styles.page}>
+        <Page>
             <Hero />
             <Mission />
             <Different />
-            <Profiles />
-            <h1 className={styles.callToAction}><span>If you are looking for something new and invigorating, <br />"Let's go on an adventure" together!</span><br />Fara i Viking!</h1>
-            <img src={viking} style={{ width: "100%", height: "auto" }}></img>
-            <img src={banner} alt="Runic Banner" className={styles.banner}></img>
-            <ContactForm />
-            <img src={logo} height="128px" width="128px" style={{ marginBottom: "24px" }}></img>
-        </div>
+        </Page>
     )
 }
 

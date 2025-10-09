@@ -1,0 +1,146 @@
+@use "assets/breakpoints.scss" as *;
+
+.page {
+    text-align: center;
+
+    .hero {
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        background-image: url("assets/meadguard.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 64px;
+        width: 80%;
+
+        @include respond-max(sm) {
+            font-size: 48px;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        width: 80%;
+
+        @include respond-max(sm) {
+            margin-top: -24px !important;
+            font-size: 24px;
+        }
+    }
+
+    .divider {
+        height: 20px;
+        max-width: 100%;
+    }
+
+    .points {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+
+        div {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+
+            h3 {
+                color: #ED2E24;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: Norse;
+
+                @include respond-max(sm) {
+                    font-size: 28px;
+                }
+            }
+
+            p {
+                font-family: "Amiri";
+                font-size: 28px;
+                width: 75%;
+
+                @include respond-max(sm) {
+                    font-size: 18px;
+                }
+
+                &.price {
+                    font-family: Norse;
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            gap: 8px;
+
+            div {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-around;
+        gap: 8px;
+        width: 80%;
+
+        >div {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+
+            h3 {
+                color: #ED2E24;
+                font-size: 40px;
+                font-weight: normal;
+
+                @include respond-max(sm) {
+                    font-size: 28px;
+                }
+            }
+
+            .images {
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                img {
+                    min-width: 0;
+                    flex: 1
+                }
+            }
+        }
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            gap: 8px;
+
+            div {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

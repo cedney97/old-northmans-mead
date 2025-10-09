@@ -1,0 +1,82 @@
+@use "assets/breakpoints.scss" as *;
+
+.card {
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    background: #fdf8f3; // parchment-like
+    color: #2c1b10; // dark brown instead of black
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 6px;
+    margin: 12px;
+    position: relative;
+
+    // subtle parchment texture (can swap for wood/stone if you like)
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    // "forged" border
+    border: 3px solid #3b2b1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    @include respond-max(sm) {
+        width: 200px;
+        min-height: 100px;
+        padding: 12px;
+    }
+
+    .quote {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: left;
+        color: #2c1b10;
+
+        @include respond-max(sm) {
+            font-size: 16px;
+        }
+    }
+
+    .name {
+        font-size: 48px;
+        font-family: "Norse", cursive; // rune-like font
+        font-weight: bold;
+        margin-top: auto;
+        color: #502c1e;
+
+
+        @include respond-max(sm) {
+            font-size: 18px;
+        }
+    }
+
+    // optional: add subtle rune-style corner accents
+    &::before,
+    &::after {
+        content: "ᚠ"; // sample rune symbol
+        font-family: "Uncial Antiqua", cursive;
+        font-size: 20px;
+        position: absolute;
+        color: #3b2b1a;
+        opacity: 0.3;
+    }
+
+    &::before {
+        top: 8px;
+        left: 8px;
+    }
+
+    &::after {
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
