@@ -7,6 +7,18 @@ const ReviewsMarquee = ({
     direction = "left",
 }) => {
 
+    const shuffle = (array) => {
+        let newArray = [...array]
+        let i = newArray.length, j, temp
+        while (--i > 0) {
+            j = Math.floor(Math.random() * (i + 1))
+            temp = newArray[j]
+            newArray[j] = newArray[i]
+            newArray[i] = temp
+        }
+        return newArray
+    }
+
     return (
         <Marquee
             direction={direction}
@@ -17,7 +29,7 @@ const ReviewsMarquee = ({
             pauseOnHover
         >
             {
-                map(reviews, (review, i) => (
+                map(shuffle(reviews), (review, i) => (
                     <ReviewCard
                         key={i}
                         {...review}

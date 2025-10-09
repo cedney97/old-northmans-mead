@@ -12,7 +12,6 @@ const ReviewsPage = () => {
             {
                 isMobile
                     ? <>
-                        <ReviewsCarousel />
                         <ReviewsMarquee />
                         <ReviewsMarquee direction="right" />
                     </>

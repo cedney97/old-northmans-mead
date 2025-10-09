@@ -32,23 +32,23 @@ const MeadGuard = () => {
                     <p>Mead+Guard Shirt | Tankard | 1 Free Bottle of Each of the 5 Profiles</p>
                 </div>
             </div>
-            <h1>Mead+Guard Products</h1>
+            <h1>The ONM Lineup</h1>
             <div className={styles.products}>
                 <div>
-                    <h3>T-Shirt</h3>
+                    <h3>Mead+Guard T-Shirt: Size of your Choice</h3>
                     <div className={styles.images}>
                         <img src={shirt1}></img>
                         <img src={shirt2}></img>
                     </div>
                 </div>
                 <div>
-                    <h3>Tankard</h3>
+                    <h3>Mead+Guard Tankard: Food/Drink Safe</h3>
                     <div className={styles.images}>
                         <img src={tankard}></img>
                     </div>
                 </div>
                 <div>
-                    <h3>Mead</h3>
+                    <h3>Mead Profiles</h3>
                     <div className={styles.images}>
                         <img src={profiles} />
                     </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
     const { openSidebar } = useSidebar()
     const navigate = useNavigate()
 
-    const isMobile = width <= 767.98
+    const isMobile = width <= 1024
 
     useEffect(() => {
         const handleScroll = () => {
