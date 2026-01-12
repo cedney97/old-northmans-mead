@@ -2,7 +2,7 @@ import styles from './Template.module.scss'
 import banner from 'assets/banner.png'
 import logo from 'assets/logo.png'
 import ContactForm from './ContactForm'
-import viking from 'assets/vikingdarker.jpg'
+import viking from 'assets/fullwalk.png'
 
 const Footer = () => {
     return (

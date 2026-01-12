@@ -1,9 +1,9 @@
 import OurMeadPage from "../pages/OurMead"
 import HomePage from "../pages/Home"
-import MeadGuard from "../pages/MeadGuard"
 import ContactPage from "../pages/Contact"
 import HowItsMadePage from "../pages/HowItsMade"
 import ReviewsPage from "../pages/Reviews"
+import OrdersPage from "../pages/Orders"
 
 export const routes = [
     {
@@ -16,8 +16,8 @@ export const routes = [
         path: "/our-mead",
         element: <OurMeadPage />
     }, {
-        path: "/mead-guard",
-        element: <MeadGuard />
+        path: "/orders",
+        element: <OrdersPage />
     }, {
         path: "/contact",
         element: <ContactPage />
