@@ -9,8 +9,8 @@ export const sidebarLinks = [
         link: "/how-its-made",
         title: "How It's Made"
     }, {
-        link: "/mead-guard",
-        title: "Mead+Guard"
+        link: "/orders",
+        title: "Orders"
     }, {
         link: "/reviews",
         title: "Reviews"

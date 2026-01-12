@@ -43,7 +43,7 @@ const Navbar = () => {
             {
                 !isMobile &&
                 <div className={styles.side} style={{ alignItems: "end" }}>
-                    <h1 onClick={() => navigate("/mead-guard")}>Mead+Guard</h1>
+                    <h1 onClick={() => navigate("/orders")}>Orders</h1>
                     <h1 onClick={() => navigate("/reviews")}>Reviews</h1>
                     <h1 onClick={() => navigate("/contact")}>Contact</h1>
                 </div>
