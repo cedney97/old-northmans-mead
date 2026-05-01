@@ -6,12 +6,6 @@ export const sidebarLinks = [
         link: "/our-mead",
         title: "Our Mead"
     }, {
-        link: "/how-its-made",
-        title: "How It's Made"
-    }, {
-        link: "/orders",
-        title: "Orders"
-    }, {
         link: "/reviews",
         title: "Reviews"
     }, {
